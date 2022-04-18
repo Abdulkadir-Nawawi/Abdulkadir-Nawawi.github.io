@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileMenu</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.standalone.min.css">
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+   <style>
+
+body {
+    overflow-x: hidden;
+    background-color:#f1f1f1;
+    margin:0;
+    width: 100%;  
+    font-family: 'Lato', sans-serif;
+  }
+
+  h4 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .navbar {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+   
+   
+  }
+ 
+
+ 
+
+ 
+ 
+
+
+
+ .fa {
+     color: teal;
+ }
+ .navbar1 {
+overflow: hidden;
+background-color: #333;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+.flex-container {
+display: flex;
+flex-wrap: ;
+font-size: 20px;
+
+}
+.flex-item-left {
+flex:16.6%;
+}
+.flex-item-right {
+flex:90%;
+margin-left: -35px;
+}  
+
+
+
+
+
+
+
+
+
+.mobile-container {
+    height: 100%;
+    width:0;
+    z-index: 1;
+    left:-4px;
+    overflow-x: hidden;
+    transition:0.5s;
+    
+  
+    background-color:#ccc;
+    border-top-left-radius: 75px;
+    
+ 
+   position: absolute;
+    top:61px;
+    
+
+}
+.closebtn {
+    position: absolute;
+    top:10px;
+    right:35px;
+    font-size: 40px;
+    color:teal;
+}
+.closebtn:hover {
+    border-bottom:none ;
+    color: rgb(182, 8, 8);
+}
+
+.list-styl {
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    color: black;
+   
+
+   
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+   
+    
+  
+}
+.list-styl:hover {
+    background-color:teal;
+    width: 130px;
+    border-radius: 9px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+   <nav class="navbar navbar-dark bg-dark">
+   <span style="font-size:30px;cursor:pointer; color: whitesmoke;" onclick="openNav()">&#9776; open</span>
+  
+
+ 
+</nav>        
+
+
+    
+<div class="mobile-container " id="myNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="container">
+    <div class="flex-container">
+        
+        <div class="flex-item-left" style="margin-left: 90px; margin-top: 50px;">
+    
+     <i class="fa fa-user-circle-o " aria-hidden="true" style="font-size: 50px;  color: whitesmoke;"><span style="color: teal; font-size: 20px; " class="ml-3 " >Login</span></i>
+ 
+     
+     </div>
+    
+    
+     </div>
+<hr style="margin-top: 30px; background-color: teal;">
+    </div>
+    <div class="flex-container" style="justify-content: center; align-items: center;">
+        <div class="">
+            
+             <div class="input-group mb-2 " >
+    <input type="text" class="form-control" placeholder="Search">
+    <button class="btn " type="submit" style="background-color: teal; color: whitesmoke;">Go</button> 
+  </div>
+ 
+            </div>
+            </div>
+     
+    <div class="flex-container">
+        <div class="flex-item-left" style="padding: 10px;"> 
+   <ul style="list-style-type: none;">
+       <li><i class="fa fa-user-circle-o " aria-hidden="true" style="font-size: 20px; margin-top: 10px;"></i></li>
+       <li><li><i class="fa fa-user-circle-o " aria-hidden="true" style="font-size: 20px; margin-top: 30px;"></i></li></li>
+        <li><li><i class="fa fa-user-circle-o " aria-hidden="true" style="font-size: 20px; margin-top: 30px;"></i></li></li>
+       <li><li><i class="fa fa-user-circle-o " aria-hidden="true" style="font-size: 20px; margin-top: 30px;"></i></li></li>
+        <li><li><i class="fa fa-user-circle-o " aria-hidden="true" style="font-size: 20px; margin-top: 30px;"></i></li></li>
+        <li><li><i class="fa fa-user-circle-o " aria-hidden="true" style="font-size: 20px; margin-top: 30px;"></i></li></li>
+        <li><li><i class="fa fa-user-circle-o " aria-hidden="true" style="font-size: 20px; margin-top: 30px;"></i></li></li>
+
+       </ul> 
+       </div>
+      
+      
+       <div class="flex-item-right " style="padding: 10px;">
+           
+           <ul style="list-style-type: none;" >
+            <li style="font-size: 18px; margin-top: 6px;" class="list-styl ">Marshell</li>
+            <li style="font-size: 18px; margin-top: 28px;" class="list-styl">Marshell</li>
+            <li style="font-size: 18px; margin-top: 28px;" class="list-styl">Marshell</li>
+            <li style="font-size: 18px; margin-top: 28px;" class="list-styl">Marshell</li>
+            <li style="font-size: 18px; margin-top: 28px;" class="list-styl">Marshell</li>
+            <li style="font-size: 18px; margin-top: 28px;"class="list-styl">Marshell</li>
+            <li style="font-size: 18px; margin-top: 28px;"class="list-styl">Marshell</li>
+            
+
+           </ul>
+      
+           </div>
+          
+       </div>
+      
+       <div class="row">
+           <div class="col-sm-12">
+      
+         <hr style=" background-color: teal; width: 90%;">
+         
+         </div>
+         </div>
+        
+       <div class="row">
+           <div class="col-sm-12">
+               <div style="display:flex; justify-content: center; align-items: center; " class="mb-5">
+
+                  <span class="fa fa-sign-in" style="cursor: pointer;">Sign Up</span>
+               </div>
+               </div>  
+       
+    
+     </div>
+         
+       <script>
+           function openNav() {
+           document.getElementById("myNav").style.width="70%";
+           }
+
+           function closeNav() {
+           document.getElementById("myNav").style.width="0%";
+           }
+       </script>                    
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>  
+</body>
+
+
+ 
